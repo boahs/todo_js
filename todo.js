@@ -8,7 +8,10 @@ var todos = ['item 1', 'item 2', 'item3', 'item4', 'item 5'];
 
     displayTodos()
 
-    function addTodo(todos) {
+    function addTodos(todos) {
         todos.push(todos);
         displayTodos();
     }
+
+    addTodos('')
+    displayTodos()
