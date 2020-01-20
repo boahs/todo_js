@@ -4,13 +4,16 @@ function sayName() {
 }
 
 var todoList = {
-    todos: ['item 1', 'item 2', 'item3', 'item4', 'item 5'],
+    todos: [],
     displaytodos: function() {
         console.log('my todos', this.todos)
     },
 
-    addTodo: function(todo) {
-        this.todos.push(todo)
+    addTodo: function(todoText) {
+        this.todos.push({
+            todoText: todoText,
+            completed: false
+        });
         this.displaytodos();
     },
 
@@ -26,3 +29,7 @@ var todoList = {
     }
     
 };
+
+
+
+
