@@ -8,6 +8,7 @@ var todoList = {
         this.todos.push(todo)
         this.displaytodos();
     },
+    
     changeTodo: function(position, newValue){
         this.todos[position] = newValue;
         this.displaytodos();
