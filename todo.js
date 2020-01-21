@@ -5,8 +5,8 @@ function sayName() {
 
 var todoList = {
     todos: [],
-    displaytodos: function() {
-        console.log('my todos', this.todos)
+    displayTodos: function() {
+        console.log('my todos', this.todos);
     },
 
     addTodo: function(todoText) {
@@ -14,18 +14,18 @@ var todoList = {
             todoText: todoText,
             completed: false
         });
-        this.displaytodos();
+        this.displayTodos();
     },
 
-    changeTodo: function(position, newValue){
-        this.todos[position] = newValue;
-        this.displaytodos();
+    changeTodo: function(position, todoText) {
+        this.todos[position].todoText = todoText;
+        this.displayTodos();
 
     },
 
-    deleteTodo: function(position){
+    deleteTodo: function(position) {
         this.todos.splice(position, 1);
-        this.displaytodos();
+        this.displayTodos();
     }
     
 };
