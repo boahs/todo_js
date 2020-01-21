@@ -6,11 +6,14 @@ function sayName() {
 var todoList = {
     todos: [],
     displayTodos: function() {
-        console.log('my todos', this.todos);
+        if (this.todos.length === 0) {
+        console.log('Your todo list is empty!');
+        } else {
+        console.log('my todos:');
         for (var i = 0; i < this.todo; i++) {
             this.todos[i].todoText;
-
         }
+                }
     },
 
     addTodo: function(todoText) {
