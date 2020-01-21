@@ -11,10 +11,15 @@ var todoList = {
         } else {
         console.log('my todos:');
         for (var i = 0; i < this.todo; i++) {
-            this.todos[i].todoText;
+        console.log(this.todos[i].todoText);
+        if (this.todos[i].completed === true){
+            console.log('(x)', this.todos[i].todoText);
+        } else{
+            console.log('()', this.todos[i].todoText);
+         }
         }
-                }
-    },
+       }
+      },
 
     addTodo: function(todoText) {
         this.todos.push({
