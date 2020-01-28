@@ -44,8 +44,15 @@ var todoList = {
         var todo = this.todos[position];
         todo.completed = !todo.completed;
         this.displayTodos();
-    }
+    },
     
+    toggleAll: function() {
+        var totalTodos = this.todos.length;
+        var completedTodos = 0;
+        if (completedTodos === totalTodos) {
+
+        }
+    }
 };
 
 
