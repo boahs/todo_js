@@ -1,20 +1,23 @@
-var myName = 'boahs'
+let myName = 'boahs'
 function sayName() {
     console.log(myName);
 }
 
-var todoList = {
+let todoList = {
     todos: [],
     displayTodos: function() {
         if (this.todos.length === 0) {
         console.log('Your todo list is empty!');
         } else {
         console.log('my todos:');
-        for (var i = 0; i < this.todo; i++) {
+        for (let i = 0; i < this.todo; i++) {
         console.log(this.todos[i].todoText);
         if (this.todos[i].completed === true){
             console.log('(x)', this.todos[i].todoText);
-        } else{
+        } 
+        if (this.todos[j].notcompleted === true) {
+            console.log('(not complete)', this.todos[j].todoText)
+        }  else{
             console.log('()', this.todos[i].todoText);
          }
         }
@@ -39,28 +42,28 @@ var todoList = {
         this.todos.splice(position, 1);
         this.displayTodos();
     },
-
+    
     toggleCompleted: function(position) {
-        var todo = this.todos[position];
+        let todo = this.todos[position];
         todo.completed = !todo.completed;
         this.displayTodos();
     },
     
     toggleAll: function() {
-        var totalTodos = this.todos.length;
-        var completedTodos = 0;
+        let totalTodos = this.todos.length;
+        let completedTodos = 0;
 
-        for (var i = 0; i < totalTodos; i++) {
+        for (let i = 0; i < totalTodos; i++) {
             if (this.todos[i].completed === true){
                 completedTodos++;
             }
         }
             if (completedTodos === totalTodos) {
-            for (var i = 0; i < totalTodos; i++){
+            for (let i = 0; i < totalTodos; i++){
                 this.todos[i].completed = false;
             }
         }   else {
-            for (var i =0; i < totalTodos; i++){
+            for (let i =0; i < totalTodos; i++){
                 this.todos[i].completed === true;
             }
 
