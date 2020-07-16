@@ -5,4 +5,4 @@ Currently no GUI
 ### Use 
 
 - Fork repo 
-- git clone https://github.com/boahs/EasyIMDb.git
+- git clone https://github.com/boahs/todo_js.git
